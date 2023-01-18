@@ -1,0 +1,42 @@
+.background{
+    background: url(./bg.jpg);
+    height: 100vh;
+    animation: roadmovement 10s infinite linear;
+
+}
+.car{
+    width: 200px;
+    position: absolute;
+    bottom: 30px;
+    left: 400px;
+    animation: move 9s linear infinite;
+}
+@keyframes move{
+    100%{
+        transform: translateX(700px);
+    }
+}
+.bike{
+    width: 200px;
+    position: absolute;
+    bottom: -10px;
+    left: 800px;
+    animation: bikemove 6s linear infinite;
+}
+@keyframes bikemove {
+    50%{
+        transform: translateX(400px);
+    }
+    
+}
+
+ @keyframes roadmovement { 
+    100%{
+        background-position: bottom right;
+    }
+    0%{
+        background-position: bottom left;
+    } 
+
+    
+}
